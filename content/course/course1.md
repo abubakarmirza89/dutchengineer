@@ -201,45 +201,60 @@ course:
               
             - order: "05"
               icon: "/images/ebook.svg"
-              title: " Picking Topic(s)"
+              title: " Video Game Sales"
+              type: lecture
+              categ: text
+              duration: "16 Pages"  
+            
+            - order: "06"
+              icon: "/images/excercise.svg"
+              title: " Excercise: Blog Post "
+              type: lecture
+              categ: text
+              duration: "1 Question"  
+
+            - order: "07"
+              icon: "/images/ebook.svg"
+              title: "Online Portfolio "
               type: lecture
               categ: text
               duration: "01:16"  
-            
-            - order: "06"
-              icon: "/images/ebook.svg"
-              title: " Build: Picking Topic "
-              type: lecture
-              categ: text
-              duration: "02:08"  
-
-            - order: "07"
-              icon: "/images/excercise.svg"
-              title: "Excercise: Picking Topic(s) "
-              type: lecture
-              categ: text
-              duration: "1 Question"  
 
             - order: "08"
               icon: "/images/ebook.svg"
-              title: " Showcasing Your Value"
+              title: " Build: Online Portfolio"
               type: lecture
               categ: text
-              duration: "02:58"  
+              duration: "01:03"  
             
             - order: "09"
-              icon: "/images/ebook.svg"
-              title: " Build: Showcasing My Value "
-              type: lecture
-              categ: text
-              duration: "00:15"  
-
-            - order: "10"
               icon: "/images/excercise.svg"
-              title: "Excercise: Showcasing Your Value"
+              title: " Exercise: Online Portfolio "
               type: lecture
               categ: text
               duration: "1 Question"  
+
+            - order: "10"
+              icon: "/images/ebook.svg"
+              title: "Resume"
+              type: lecture
+              categ: text
+              duration: "02:29"  
+            
+            - order: "11"
+              icon: "/images/ebook.svg"
+              title: "Build: My Resume"
+              type: lecture
+              categ: text
+              duration: "00:59"
+
+              order: "12"
+              icon: "/images/excercise.svg"
+              title: "Exercise: Resume"
+              type: lecture
+              categ: text
+              duration: "1 Question"
+              
         
 
         
