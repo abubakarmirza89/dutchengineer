@@ -1,6 +1,11 @@
 {{ define "main"}}
 
+<style>
+.lw-contents-svg path {
+    fill: white;
+  }
 
+</style>
 <section class="js-learnworlds-section learnworlds-section lw-body-bg stretched-bg learnworlds-size-normal learnworlds-align-left js-change-image-node" data-magic="background-image" data-section-id="courseHero4" id="section_1671380174601_405">
     <div class="js-video-wrapper" style="display: none;"></div>
     <div class="learnworlds-section-overlay lw-dark-bg js-learnworlds-overlay" style="display: none;"></div>
@@ -107,23 +112,17 @@
               
 
               <div class="col span_11_of_12 span_11_of_12-tl span_10_of_12-tp span_12_of_12-sl span_12_of_12-sp fg-1 no-padding lw-b-1px-fadeout90"><div class="p-2rem lw-bb-1px-fadeout90"><div class="with-flexible-parts justify-content-space-between align-items-center"><h3 class="learnworlds-heading3 learnworlds-heading3-large learnworlds-element lw-course-contents-chapter-name no-margin-bottom">{{ $unit.title }}</h3> <div class="with-flexible-parts align-items-center"><div class="lw-tag no-margin-bottom lw-brand-bg learnworlds-main-text learnworlds-element learnworlds-main-text-tiny">free </div> <!----></div></div> <!----></div> <div class="lw-course-contents-units">
-                {{ range $index, $lecture := .Params.course.units.lectures }}	
+                
+                {{ range $index, $lecture := .lectures }}	
 
-                <div class="lw-course-contents-unit align-items-center with-flexible-parts p-1rem-2rem lw-bb-1px-fadeout90 lw-course-unit-completed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" data-icon="ebook" class="lw-contents-svg small"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke-width="1.6" d="M15.62 7.82v17.5"></path><path stroke-width="1.2" d="M6.88 9.69a17.74 17.74 0 013.12.63 18 18 0 013.12 1.25M13.12 19.37A18.85 18.85 0 0010 18.12a18.58 18.58 0 00-3.12-.62"></path><path stroke-width="1.6" d="M15.62 7.82a19.37 19.37 0 0111.26-3.13v17.5a19.37 19.37 0 00-11.26 3.13 19.31 19.31 0 00-11.24-3.13V4.69a19.31 19.31 0 0111.24 3.13z"></path><path stroke-width="1.2" d="M18.12 11.57a18.48 18.48 0 013.13-1.25 17.66 17.66 0 013.13-.63M24.38 17.5a18.48 18.48 0 00-3.13.62 19.36 19.36 0 00-3.13 1.25M13.12 15.62A18.85 18.85 0 0010 14.37a18.58 18.58 0 00-3.12-.62M24.38 13.75a18.48 18.48 0 00-3.13.62 19.36 19.36 0 00-3.13 1.25"></path></g></svg> <div class="ml-10px no-margin-bottom learnworlds-main-text learnworlds-main-text-small learnworlds-element">
+                <div class="lw-course-contents-unit align-items-center with-flexible-parts p-1rem-2rem lw-bb-1px-fadeout90 lw-course-unit-completed">
+                    <img src = "{{$lecture.icon}}" alt="My Happy SVG" style="height:30px; width:30px; fill:white; "/>                    <div class="ml-10px no-margin-bottom learnworlds-main-text learnworlds-main-text-small learnworlds-element">
                 {{ $lecture.title }}
             </div> <div class="hide-sp ml-10px no-margin-bottom lw-text-color-fadeout50 learnworlds-main-text learnworlds-main-text-small learnworlds-element">
                 {{ $lecture.duration}}
                     </div> <!----> <span class="ml-10px no-margin-bottom learnworlds-main-text-small learnworlds-icon fas fa-check lw-course-unit-check"></span></div>
                     {{ end }}
-                    <div class="lw-course-contents-unit align-items-center with-flexible-parts p-1rem-2rem lw-bb-1px-fadeout90 lw-course-unit-completed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" data-icon="ebook" class="lw-contents-svg small"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke-width="1.6" d="M15.62 7.82v17.5"></path><path stroke-width="1.2" d="M6.88 9.69a17.74 17.74 0 013.12.63 18 18 0 013.12 1.25M13.12 19.37A18.85 18.85 0 0010 18.12a18.58 18.58 0 00-3.12-.62"></path><path stroke-width="1.6" d="M15.62 7.82a19.37 19.37 0 0111.26-3.13v17.5a19.37 19.37 0 00-11.26 3.13 19.31 19.31 0 00-11.24-3.13V4.69a19.31 19.31 0 0111.24 3.13z"></path><path stroke-width="1.2" d="M18.12 11.57a18.48 18.48 0 013.13-1.25 17.66 17.66 0 013.13-.63M24.38 17.5a18.48 18.48 0 00-3.13.62 19.36 19.36 0 00-3.13 1.25M13.12 15.62A18.85 18.85 0 0010 14.37a18.58 18.58 0 00-3.12-.62M24.38 13.75a18.48 18.48 0 00-3.13.62 19.36 19.36 0 00-3.13 1.25"></path></g></svg> <div class="ml-10px no-margin-bottom learnworlds-main-text learnworlds-main-text-small learnworlds-element">
-                        Course Outline and Objectives
-                    </div> <div class="hide-sp ml-10px no-margin-bottom lw-text-color-fadeout50 learnworlds-main-text learnworlds-main-text-small learnworlds-element">
-                        00:22
-                    </div> <!----> <span class="ml-10px no-margin-bottom learnworlds-main-text-small learnworlds-icon fas fa-check lw-course-unit-check"></span></div><div class="lw-course-contents-unit align-items-center with-flexible-parts p-1rem-2rem lw-bb-1px-fadeout90"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" data-icon="survey" class="lw-contents-svg small"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"><rect x="4.38" y="11.25" width="5" height="14.38" rx="1.27" ry="1.27"></rect><rect x="12.5" y="4.38" width="5" height="21.25" rx="1.27" ry="1.27"></rect><rect x="20.63" y="16.88" width="5" height="8.75" rx="1.27" ry="1.27"></rect></g></svg> <div class="ml-10px no-margin-bottom learnworlds-main-text learnworlds-main-text-small learnworlds-element">
-                        Introduce Yourself
-                    </div> <div class="hide-sp ml-10px no-margin-bottom lw-text-color-fadeout50 learnworlds-main-text learnworlds-main-text-small learnworlds-element">
-                        5 questions
-                    </div> <!----> <!---->
+                    
                 </div>
             </div>
 
