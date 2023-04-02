@@ -1,5 +1,5 @@
 ---
 title: "Courses"
-type: details
+type: lecture
 
 ---
