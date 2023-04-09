@@ -1,0 +1,656 @@
+{{ define "main"}}
+
+<div class="row">
+    <div class="sidebar col-md-3">
+        <div class="arrow"><i class="fa-solid fa-arrow-left-long"></i> <p> Back to course page</p> </div>  </a>
+        <div class="side-bar1">
+          <p>Build A Successful Portfolio</p>
+      </div>
+      <div class="percentage-line">
+        <div class="gray"></div> <div class="white"></div> <p>27%</p>
+      </div>
+      <div>  
+        <div class="menu">
+            <ul class="nav nav-tabs menu">
+                <li class="nav-item" style=" color: rgb(106, 146, 135)  ;">
+                    <a class="nav-link active" id="y1" data-toggle="tab" href="#tab1" style=" color: rgb(106, 146, 135)  ;">Path</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="y2" data-toggle="tab" href="#tab2" style=" color: white;">Learners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="y3" data-toggle="tab" href="#tab3" style=" color: white ;">Discuss</a>
+                </li>
+            </ul>
+            
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab1">
+                    <!-- Content for tab 1 (Path) -->
+                
+
+                    
+                
+                
+                </div>
+                <div class="tab-pane fade" id="tab2">
+                    <!-- Content for tab 2 (Learners) -->
+                </div>
+                <div class="tab-pane fade" id="tab3">
+                    <!-- Content for tab 3 (Discuss) -->
+                </div>
+            </div>
+            
+        </div>
+      </div>        
+
+
+    </div>
+
+    <div class="content col-md-9" style="padding-left: 0px;">
+        <div class="main"  id="right">
+             <div class="header">
+             <div class="nxt-prv" id="prev"  onclick="previous()"><i class="fa-solid fa-angle-left" ></i> previous</div> 
+             <div class="nxt-prv" id="nxt" onclick="next()">next <i class="fa-solid fa-angle-right"></i></div> 
+             </div>
+             <div class="main-content" id="page-1" >
+              <p>Hi all!</p><br><br>
+              <p>Welcome to my course.My name is Sarah Floris. i will be your instructor in this course  </p><br><br>
+              <p>This course will cover:</p>
+              <p>1. common data roles i.e. data analyst, data scientist, data engineer, and machine learning engineer,</p>
+              <p>2. how we can create a successful projects, and</p>
+              <p>3. how to properly showcase those projects in a portfolio, resume, blog post, interviews, and on Linkedln.</p><br><br>
+              <p>2. Data Positions Spectrum
+                Ba Introduction
+                Olo Career Choice
+                Read cdn.my course.app analyst
+                You ready? Because I am ready to get you prepared for those interviews!</p>
+             </div>
+             
+          </div>
+          </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function home() {
+
+if (document.getElementById("y1").style.display === 'none') {
+} else {
+document.getElementById("s1").style.display= "block";
+document.getElementById("s2").style.display= "none";
+document.getElementById("o1").style.display= "none";
+}
+}
+function watch() {
+if (document.getElementById("y2").style.display === 'none') {
+
+} else {
+document.getElementById("s2").style.display= "block";
+document.getElementById("s1").style.display= "none";
+document.getElementById("o1").style.display= "none";
+}
+
+}
+function alert() {
+if (document.getElementById("y3").style.display === 'none') {
+
+
+} else {
+document.getElementById("o1").style.display= "block";
+document.getElementById("s1").style.display= "none";
+document.getElementById("s2").style.display= "none";
+}
+}
+function previous() {
+
+if (document.getElementById("prev").style.display === 'none') {
+} else {
+document.getElementById("pre").style.display= "block";
+document.getElementById("page-1").style.display= "none";
+document.getElementById("pro").style.display= "none";
+}
+}
+function next() {
+
+if (document.getElementById("prev").style.display === 'none') {
+} else {
+document.getElementById("pro").style.display= "block";
+document.getElementById("page-1").style.display= "none";
+document.getElementById("pre").style.display= "none";
+}
+}
+function openNav() {
+    document.getElementById("mySidebar").style.width = "330px";
+    document.getElementById("main").style.marginLeft = "330px";
+      document.getElementById("right").style.position = "fixed";
+    
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("right").style.position = "fixed";
+  }
+  /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+}
+}
+}
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctio() {
+document.getElementById("myDropdow").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbt')) {
+var dropdowns = document.getElementsByClassName("dropdown-conten");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+}
+}
+}
+}
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFuncti() {
+document.getElementById("myDropdo").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropb')) {
+var dropdowns = document.getElementsByClassName("dropdown-conte");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+}
+}
+}
+}
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunct() {
+document.getElementById("myDropd").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropb]')) {
+var dropdowns = document.getElementsByClassName("dropdown-cont");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+}
+}
+}
+}
+
+function myFunc() {
+document.getElementById("myDrop").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.drop]')) {
+var dropdowns = document.getElementsByClassName("dropdown-con");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+}
+}
+}
+}
+</script>
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'josefin sans' , sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0px auto;
+    width: 1280px;
+}
+.data{
+    display: flex;
+    
+}
+.sidebar{
+    width: 25%;
+    height: 300px;
+    background-color: rgb(106, 146, 135);
+    padding-left: 30px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+.p{
+    position: absolute;
+}
+.main{
+    height: 700px;
+    background-color: rgb(244, 244, 244);
+    position: absolute;
+}
+.logo{ 
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    color: white;
+    font-style: italic;
+    height: 20px;
+}
+.side-bar1 p{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    width: 80%;
+    margin-top: 55px;
+    
+}
+.logo p:hover{
+    border-bottom: 1px solid white;
+}
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrow p{
+     font-size: 15px;
+}
+.gray{
+    height: 5px;
+    width:22%;
+    background-color: rgb(251, 250, 250);
+    padding-top: 5px;
+}
+.white{
+    height: 5px;
+    width:60%;
+    background-color: rgb(166, 164, 164);
+}
+.percentage-line{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.percentage-line p{
+font-size: 12px;
+color: white;
+padding-left: 15px;
+}
+.menu{
+    list-style: none;
+    color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    margin-top: 25px;
+    
+}
+.list1 {
+    cursor: pointer;
+    color: #fffbfb;
+}
+.list2 {
+    cursor: pointer;
+    color: #fffbfb;
+}
+.list3 {
+    cursor: pointer;
+    color: #fffbfb;
+}
+.list1 i{
+    padding-left: 10px;
+}
+.list2 i{
+    padding-left: 20px;
+    display: none;
+}
+.list3 i{
+    padding-left: 20px;
+    display: none;
+}
+.path li{
+    list-style: none;
+    padding-top: 30px;
+    
+}
+.path li:hover{
+    color: rgb(106, 146, 135);
+}
+
+.box{
+    padding: 50px;
+    width: 150px;
+    background-color: #cecece;
+    text-align: center;
+    border: 5px solid white;
+}
+
+.box1{
+    position: absolute;
+    display: flex;
+    margin-top: 240px;
+    left: 10px;
+}
+.box3{
+    display: flex;
+    position: absolute;
+    right: 0px;
+}
+.alert{
+    position: absolute;
+    margin-top: 240px;
+    left: 0px;
+    width: 100%;
+    display: none;
+    
+
+}
+.btn{
+    background-color:rgb(106, 146, 135);
+    color: white;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    
+} 
+.alert-inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 60px;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    background-color: rgb(215, 215, 215);
+    color: rgb(50, 50, 50);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+}
+.nxt-prv{
+    cursor: pointer;
+}
+
+.page-2{
+    margin: 0px auto;
+    width: 70%;
+    margin-top: 60px;
+    display: none;
+}
+.main-content {
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+  
+  .sidebar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fffbfb;
+    display: block;
+    transition: 0.3s;
+  }
+  .watch-list{
+    position: absolute;
+   margin-top: -220px;
+
+  }
+  /* .closebtn{
+    font-size: 15px;
+    position: absolute;
+    padding-left:220px ;
+  }
+  */
+  
+  .open-btn {
+    cursor: pointer;
+    position:absolute ;
+    margin-top: 10px;
+  }
+
+  .dropbtn {
+    color:rgb(0, 0, 0) ;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn:hover{
+    color: rgb(106, 146, 135)  ;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+
+  .dropbt {
+    color:rgb(0, 0, 0) ;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbt:hover{
+    color: rgb(106, 146, 135)  ;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-conten {
+    display: none;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+
+    z-index: 1;
+  }
+  
+  .dropdown-conten a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-conten a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+  .dropb {
+    color:rgb(0, 0, 0) ;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropb:hover{
+    color: rgb(106, 146, 135)  ;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-conte {
+    display: none;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+  .dropdown-conte a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-conte a:hover {
+    background-color: #ddd;}
+  .show {
+    display: block;}
+  .drop {
+    color:rgb(0, 0, 0) ;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .drop:hover{
+    color: rgb(106, 146, 135)  ;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-cont {
+    display: none;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  .dropdown-cont a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-cont a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+  .dro {
+    color:rgb(0, 0, 0) ;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dro:hover{
+    color: rgb(106, 146, 135)  ;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-con {
+    position: absolute;
+    display: none;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  .dropdown-con a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-con a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    
+    
+    .sidebar {padding-top: 15px; padding-bottom: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+ 
+
+</style>
+
+{{ end }}

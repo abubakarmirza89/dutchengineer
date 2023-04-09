@@ -4,11 +4,18 @@
 
 
 <body>
+    {{ if ne .Type "lecture" }}
     {{- partial "common/nav.html" . -}}
+    {{ end }}
+
 
     {{- block "main" . -}} {{- end -}}
-
+    
+    
+    {{ if ne .Type "lecture" }}
     {{- partial "common/footer.html" . -}}
+    {{ end }}
+   
     {{- partial "common/scripts.html" . -}}
     {{- block "scripts" . -}} {{- end -}}
 
