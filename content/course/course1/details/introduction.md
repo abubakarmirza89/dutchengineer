@@ -1,5 +1,5 @@
 ---
 title: "Introduction"
-type: unit
+type: course1
 order: "1"
 ---
